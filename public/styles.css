@@ -1,0 +1,267 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+};
+
+body{
+    background-color:#666;
+    }
+header{
+    background-color:#EAC926;
+    width:100%;
+    padding: 10px;
+}
+input{
+    border:none;
+}
+
+nav .site, .login{
+    color:#666666;
+}
+
+main{
+    text-align: center;
+    width: 100%;
+    background-color:#ebebeb
+}
+h2{
+    font-size: 24px;
+}
+
+h4{
+    font-size: 16px;
+}
+
+h3{
+    font-size: 18px;
+}
+
+p{
+    font-size: 12px;
+}
+
+
+
+footer{
+text-align: center}
+
+.productosDetalles{
+    margin:10px;
+    border-top: 1px solid #ebebeb;
+    padding-left:15px;
+    padding-right:15px;
+    background-color:white;
+    padding-bottom: 10px;
+    width: 45%;
+    align-items:center;
+    
+}
+
+.imgProductos{
+    width:100%;
+}
+.top{
+    text-align: center
+}
+
+.burger-menu{
+    background-color:#03264C;
+    width:5%;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+    padding: 5px 0px;
+    border-radius: 8px;
+    font-size: 17px;
+}
+
+article i.fas{
+color: #03264C;
+}
+
+.art-footer{
+    text-align: center;
+    margin: 15%
+}
+.precioDescuento{
+    display:flex;
+    flex-wrap:wrap;
+    
+}
+
+.precio{
+
+padding-right: 10px;
+}
+.descuento{
+
+padding-left: 5px;
+color: #39b54a;
+}
+.fa-truck{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: relative;
+    left: 80%;
+    top: -25px;
+    align-self: right;
+    color:#39b54a
+    
+}
+.logo{
+    width: 200px;}
+
+ul{
+        list-style:none}
+  
+
+/*celular*/
+@media(max-width: 426px)  {
+    .descripcion{
+        display: none;
+
+    }
+    .site {
+        display: none;
+    }
+
+    .login {
+        display: none;
+    }
+
+    .productosDetalles{
+        margin:10px;
+        border-top: 1px solid #ebebeb;
+        padding-left:15px;
+        padding-right:15px;
+        background-color:white;
+        padding-bottom: 10px;
+        width: 100%;
+        align-items:center;
+    }
+    
+
+    
+}
+
+/*tablet*/
+@media(min-width:427px) and (max-width:768px){
+    .productosUltimaVista, .ofertas{
+        display:flex;
+        justify-content:center;
+        flex-wrap: wrap;
+        align-items:stretch;
+    }
+
+    .productosDetalles{
+        margin:10px;
+        border-top: 1px solid #ebebeb;
+        padding-left:15px;
+        padding-right:15px;
+        background-color:white;
+        padding-bottom: 10px;
+        width: 40%;
+        justify-content: center;
+        align-items:stretch;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    header{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .nav-izq{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        position: relative;
+        top: 40px;
+        padding : 20px;
+ 
+    }
+
+    .der-nav{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-end;
+        
+    }
+
+    li a{
+padding: 10px;
+    }
+}
+
+/*desktop*/
+@media(min-width: 769px)  {
+    .burger-menu{
+        display: none;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .productosUltimaVista, .ofertas{
+        display:flex;
+        justify-content:center;
+        flex-wrap: wrap;
+        align-items:stretch;
+    }
+
+    .productosDetalles{
+        margin:10px;
+        border-top: 1px solid #ebebeb;
+        padding-left:15px;
+        padding-right:15px;
+        background-color:white;
+        padding-bottom: 10px;
+        width: 20%;
+        justify-content: center;
+        align-items:stretch;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .nav-izq{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        position: relative;
+        top: 40px;
+        padding : 20px;
+ 
+    }
+
+    .der-nav{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-end;
+        
+    }
+
+    li a{
+padding: 10px;
+    }
+
+    .logo{
+        width: 30%;
+    }
+
+    .cabecera{
+        display: flex;
+        flex-wrap: wrap;
+       align-items: center;
+    }
+
+    input{
+        height: 30%;
+        width: 10%;
+    }
+}
