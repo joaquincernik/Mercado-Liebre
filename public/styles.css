@@ -17,6 +17,18 @@ input{
     border:none;
 }
 
+a{
+    color:black;
+    font-style: normal;
+    text-decoration: none;
+    transition: all 0.5s
+    
+}
+
+a:hover{
+    color:#666666;
+}
+
 nav .site, .login{
     color:#666666;
 }
@@ -28,6 +40,7 @@ main{
 }
 h2{
     font-size: 24px;
+    padding: 25px ;
 }
 
 h4{
@@ -42,10 +55,27 @@ p{
     font-size: 12px;
 }
 
-
+.busqueda{
+    width: 20vw;
+    border-radius: 5px;
+    padding: 5px
+}
+.burger-menu{
+    background-color:#03264C;
+    color:blanchedalmond;
+    width: 20px;
+    border-radius: 5px;
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    
+;}
 
 footer{
-text-align: center}
+text-align: center;
+margin: 100px;
+}
 
 .productosDetalles{
     margin:10px;
@@ -66,16 +96,7 @@ text-align: center}
     text-align: center
 }
 
-.burger-menu{
-    background-color:#03264C;
-    width:5%;
-    text-align: center;
-    color: white;
-    margin: 0 auto;
-    padding: 5px 0px;
-    border-radius: 8px;
-    font-size: 17px;
-}
+
 
 article i.fas{
 color: #03264C;
@@ -83,7 +104,7 @@ color: #03264C;
 
 .art-footer{
     text-align: center;
-    margin: 15%
+    margin:5px;
 }
 .precioDescuento{
     display:flex;
@@ -116,12 +137,37 @@ color: #39b54a;
     color:#39b54a
     
 }
+
+.fa-search{
+border: none;
+position:relative;
+left: -30px;
+}
+
+.fa-search:hover{
+    color:#EAC926;
+}
+
 .logo{
     width: 200px;}
 
 ul{
         list-style:none}
-  
+
+.fa-gift, .fa-user-shield, .fa-credit-card{
+    transition: all 0.5s
+}
+.fa-gift:hover{
+    color:#EAC926
+}
+ 
+.fa-user-shield:hover{
+    color:#EAC926
+}
+
+.fa-credit-card:hover{
+    color:#EAC926
+}
 
 /*celular*/
 @media(max-width: 426px)  {
@@ -131,6 +177,24 @@ ul{
     }
     .site {
         display: none;
+    }
+
+    .cabecera{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        padding:10px;
+    }
+
+    .busqueda{
+        width:60vw;
+    }
+
+    .busquedaCaja{
+        display:flex;
+        margin: 5px
+        ;
     }
 
     .login {
@@ -148,6 +212,10 @@ ul{
         align-items:center;
     }
     
+    .art-footer{
+        text-align: center;
+        margin:15px;
+    }
 
     
 }
@@ -161,6 +229,34 @@ ul{
         align-items:stretch;
     }
 
+    
+
+    header{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+   
+
+    .cabecera{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: nowrap;  
+        justify-content:space-between;
+        align-items:center;
+    }
+
+    .busqueda{
+        width: 35vw;
+    }
+    .busquedaCaja{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: nowrap;  
+        justify-content:space-between;
+        align-items:center;
+        
+    }
     .productosDetalles{
         margin:10px;
         border-top: 1px solid #ebebeb;
@@ -183,23 +279,29 @@ ul{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        position: relative;
-        top: 40px;
-        padding : 20px;
- 
     }
 
     .der-nav{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        justify-content: flex-end;
-        
     }
 
+    .seccionNav{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: nowrap;  
+        justify-content:flex-start;
+        align-items:center;
+    }
     li a{
 padding: 10px;
     }
+
+    .burger-menu{
+        display:none;
+    }
+
 }
 
 /*desktop*/
@@ -211,9 +313,11 @@ padding: 10px;
 
     .productosUltimaVista, .ofertas{
         display:flex;
-        justify-content:center;
+        justify-content:space-between;
         flex-wrap: wrap;
         align-items:stretch;
+        margin: 20px;
+    
     }
 
     .productosDetalles{
@@ -226,24 +330,33 @@ padding: 10px;
         width: 20%;
         justify-content: center;
         align-items:stretch;
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        transition: all 0.5s
     }
+
+    .productosDetalles:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+
+    }
+
+    
     .nav-izq{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        position: relative;
-        top: 40px;
-        padding : 20px;
- 
     }
 
     .der-nav{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        justify-content: flex-end;
-        
+    }
+
+    .seccionNav{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: nowrap;  
+        justify-content:space-between;
+        align-items:center;
     }
 
     li a{
@@ -251,17 +364,61 @@ padding: 10px;
     }
 
     .logo{
-        width: 30%;
+        width: 30vw;
     }
 
     .cabecera{
         display: flex;
         flex-wrap: wrap;
        align-items: center;
+       justify-content: space-between;
+       padding-top: 10px;
+       padding-bottom: 20px
     }
 
     input{
         height: 30%;
         width: 10%;
+    }
+
+    .descripcion{
+        opacity: 0;
+    }
+    .descripcion:hover{
+        opacity:1;
+        transition: all 0.5s;
+    }
+
+    .fa-truck{
+        transition:all 0.5s;
+    }
+
+    .fa-truck:hover{
+        transform: rotate(-90deg);
+    }
+
+    /*footer*/
+   .art-footer{
+       width: 30%;
+       padding: 10px;
+      
+   }
+    .footer-box{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        padding-bottom: 20px;
+        
+    }
+
+    .footer-chico{
+        display: flex;
+    }
+    .footer-chico h3{
+        font-size: 14px;
+        font-weight:lighter
+
     }
 }

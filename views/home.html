@@ -17,17 +17,23 @@
 <body>
     <header>
     <div class="cabecera">
-        <img class="logo" src="./images/logo-mercado-liebre.svg">
+        <a href="./"><img class="logo" src="./images/logo-mercado-liebre.svg"></a>
         
-        <input type="search" name="Busqueda" placeholder="Buscar productos, marcas">
+        <form class="busquedaCaja"><input type="text" class="busqueda" name="Busqueda" placeholder="Buscar productos, marcas">
+        <a class="fas fa-search"></a>
+        </form>
         <article class="top">
             <p>
                 <i class="fas fa-hand-holding-usd"></i>
                 Compra en cuotas y sin tarjeta de credito</p>
             
         </article>
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+       </div>
+        
     </div>
-
+<div class="seccionNav">
     <nav class="site">
         <ul class="nav-izq">
             <li class="login"><a href="#">Ofertas</a></li>
@@ -39,15 +45,14 @@
     
     <nav class="login">
         <ul class="der-nav">
-            <li><a href="#Crea tu cuenta">Crea tu cuenta</a> <i class="far fa-address-card"></i></li>
-            <li><a href="#Ingresa">Ingresa</a><i class="fas fa-chart-line"></i></li>
+            <li><a href="./register">Crea tu cuenta</a> <i class="far fa-address-card"></i></li>
+            <li><a href="./login">Ingresa</a><i class="fas fa-chart-line"></i></li>
             <li><a href="#Mis compras">Mis compras</a><i class="fas fa-cart-arrow-down"></i></li>
             
         </ul>
     </nav>
-     <div class="burger-menu">
-         <i class="fas fa-bars"></i>
-    </div>
+</div>
+   
         
     
     
@@ -100,6 +105,7 @@
         </section>
         <h2>Seccion de Ofertas</h2>
         <section class="ofertas">
+            
            
             <article class="productosDetalles">
                 <img class="imgProductos" src="/images/img-cafetera-moulinex.jpg" alt="cafetera">
@@ -139,14 +145,15 @@
              <div class="precioDescuento">
                 <h3 class="precio">$23.200</h3>
                 <h4 class="descuento">5% off</h4>
-                <h4 class="descripcion">SmartTv Samsung 43"</h4>
             </div>
+                <h4 class="descripcion">SmartTv Samsung 43"</h4>
+           
             </article>
         </section>
     </div>
     </main>
     <footer>
-
+        <div class="footer-box">
         <article class="art-footer">
             <i class="fas fa-credit-card"></i>
             <h3>Paga con tarjeta o en efectivo</h3>
@@ -162,13 +169,15 @@
         
         
          <article class="art-footer">
+            <i class="fas fa-user-shield"></i>
             <h3>Seguridad, de principio a fin</h3>
             <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
                 porque estás siempre protegid@.</p>
         </article>  
         
-        <article class="art-footer"><h3>Copyright © 1999-2020 MercadoLiebre S.R.L.</h3></article>
-            
+    </div>
+    <article class="footer-chico"><h3>Copyright © 1999-2020 MercadoLiebre S.R.L.</h3></article>
+
     </footer>    
 </body>
 
