@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
-  "scrpts":{
-    "start": "node app.js"},
+  "scrpts": {
+    "start": "node app.js"
+  },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "exprexx": "^1.0.0"
   },
   "devDependencies": {},
   "scripts": {
